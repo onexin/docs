@@ -11,7 +11,6 @@
 ### 服务器要求 {#server-requirements}
 Laravel框架有一些系统要求。[Laravel Homestead](/docs/master/homestead)虚拟机可以满足所有这些要求，因此强烈建议您将Homestead用作本地Laravel开发环境。
 但是，如果您不使用Homestead，则需要确保您的服务器满足以下要求：
-<div class="content-list">
 
 - PHP&gt;=7.3
 - BCMath PHP扩展
@@ -24,7 +23,6 @@ Laravel框架有一些系统要求。[Laravel Homestead](/docs/master/homestead)
 - Tokenizer PHP扩展
 - XML PHP扩展
 
-</div>
 ### 安装Laravel {#installing-laravel}
 Laravel利用[Composer](https://getcomposer.org)管理其依赖项。因此，在使用Laravel之前，请确保已在计算机上安装了Composer。
 #### 通过Laravel安装程序
@@ -33,14 +31,11 @@ Laravel利用[Composer](https://getcomposer.org)管理其依赖项。因此，�
 composer global require laravel/installer
 ```
 请确保将Composer的系统范围的供应商bin目录放置在您的`$PATH`中，以便系统可以定位laravel可执行文件。根据您的操作系统，该目录位于不同的位置；但是，一些常见的位置包括：
-<div class="content-list">
-
 
 - macOS：`$HOME/.composer/vendor/bin`
 - Windows：`%USERPROFILE%\AppData\Roaming\Composer\vendor\bin`
 - GNU /Linux发行版：`$HOME/.config/composer/vendor/bin`或`$HOME/.composer/vendor/bin`
 
-</div>
 您还可以通过运行`composer global about`并从第一行开始查找，从而找到作曲家的全局安装路径。
 安装后，`laravel new`命令将在您指定的目录中创建全新的Laravel安装。例如，`laravel new blog`将创建一个名为`blog`的目录，其中包含一个全新的Laravel安装，其中已经安装了所有Laravel的依赖项：
 ```
@@ -70,14 +65,12 @@ Laravel框架的所有配置文件都存储在`config`目录中。每个选项�
 #### 其他配置
 Laravel几乎不需要其他任何配置。您可以自由地开始开发！但是，您可能希望查看`config/app.php`文件及其文档。它包含几个选项，例如`timezone`和`locale`，您可能希望根据自己的应用程序进行更改。
 您可能还想配置Laravel的一些其他组件，例如：
-<div class="content-list">
-
 
 - [缓存](/docs/master/cache#configuration)
 - [数据库](/docs/master/database#configuration)
 - [会话](/docs/master/session#configuration)
 
-</div>## Web服务器配置 {#web-server-configuration}
+## Web服务器配置 {#web-server-configuration}
 ### 目录配置 {#directory-configuration}
 Laravel应该始终在为您的Web服务器配置的&quot;web目录&quot;的根目录之外提供。您不应尝试从&quot;web目录&quot;的子目录中提供服务Laravel应用程序。尝试这样做可能会暴露应用程序内存在的敏感文件。
 ### 漂亮的网址 {#pretty-urls}
