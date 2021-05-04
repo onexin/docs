@@ -21,4 +21,4 @@ ONEXIN新手QQ群：189610242
 ONEXIN QQ Group：189610242
 
 ONEXIN TEAM
-https://www.onexin.net
+https://www.oulub.com
